@@ -93,11 +93,15 @@ button:active {
   outline: none;
 }
 
+.card_icon_info {
+    margin-top: 100px;
+}
+
 
 .swiper_shiping{
     display: flex;
     align-items: center;
-    margin-top: 60px;
+
     margin-bottom: 40px;
 }
 
@@ -119,6 +123,7 @@ p{
 
 .accent__p2{
     color: #00583A;
+    font-weight: 600;
 }
 
 .info_solution{
@@ -211,14 +216,24 @@ p{
 
 .card_icon_flex{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     align-items: center;
 }
 
 .card_icon{
     width: 340px;
     height: 228px;
-    margin-top: 40px;
-    margin-right: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background-color: #FCFCFC;
+}
+
+.card_info_text {
+    max-width: 820px;
+    margin-bottom: 40px;
 }
 
 .card_icon_text{
@@ -228,13 +243,14 @@ p{
 }
 
 
-
+.card_icon_text > p {
+    font-weight: 500;
+}
 
 .heading {
     padding-top: 135px;
     height: 500px;
 
-    border-top: 10px solid #DDAA21;
     background: url('../imgs/shiping.png')
 }
 
@@ -336,6 +352,10 @@ p{
 }
 
 @media screen and (max-width:425px){
+    .card_icon_flex {
+        justify-content: center;
+    }
+
     .header__social{
       display: none;
     }

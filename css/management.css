@@ -98,7 +98,10 @@ button:active {
 }
 
 .container{
-    padding: 0 250px;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 120px;
+    padding-bottom: 40px;
 }
 
 .accent__p{
@@ -166,7 +169,7 @@ p{
 
 @media screen and (max-width:1440px){
     .container {
-        padding: 0 14px;
+        padding: 20px 5px;
     }
 
         .more_shiping_card-img img {
@@ -175,6 +178,10 @@ p{
 }
 
 @media screen and (max-width:425px){
+  .management_p {
+    font-size: 14px;
+  }
+  
   .managment_card_flex {
     display: flex;
     flex-direction: column;
@@ -206,7 +213,7 @@ p{
 
 
   .management_card-text{
-    width: 320px;
+    width: 100%;
     height: 610px;
     margin-left: 38px;
   }
@@ -243,12 +250,12 @@ p{
   }
 
   .managment_card_img img{
-    width: 350px;
+    width: 100%;
   }
 
 
   .management_card-text{
-    width: 320px;
+    width: 100%;
     height: 610px;
     margin-left: 14px;
   }

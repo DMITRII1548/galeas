@@ -40,6 +40,10 @@
     color: #303030;
 }
 
+.news__img {
+    width: 100%;
+}
+
 @media screen and (max-width: 999px) {
     .news {
         gap: 20px;

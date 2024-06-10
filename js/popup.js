@@ -1,9 +1,14 @@
 {
     const openPopupBtn = document.getElementById('popupBtn')
     const popup = document.getElementById('popup')
+    const bg = document.getElementById('popup-bg')
 
     openPopupBtn.onclick = () => {
         popup.classList.toggle('none')
+    }
+
+    bg.onclick = () => {
+        popup.classList.add('none')
     }
 }
 {

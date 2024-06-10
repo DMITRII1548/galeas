@@ -17,7 +17,6 @@
         },
         mousewheel: true,
         keyboard: true,
-        loop: true
     })
 }
 
