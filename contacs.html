@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/btn.css">
     <link rel="stylesheet" href="./css/breadcrumbs.css">
     <link rel="stylesheet" href="./css/questions.css">
@@ -31,17 +32,188 @@
                     <span></span>
                 </div>
                 <div class="menu">
-                    <nav>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="./cooperation.html">Сотрудничество</a></li>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                    </nav>
+                    <div class="menu_btn_container">
+                        <button class="menu-solutions">Решения</button>
+
+                        <button class="menu-solutions_mobile">Решения</button>
+                            <div class="menu_moba hide_mobile_menu">
+
+                                <button class="button_mobile_shipping">Морские</button>
+
+                                    <div class="menu_btn_container2 active_shipping hide1">
+                                        <a href="#">Перевозки контейнерных грузов</a>
+                                        <a href="#">Перевозки негабаритных грузов</a>
+                                        <a href="#">Смешанные проектные мультимодальных задачи</a>
+                                        <a href="#">RO-RO перевозки на пароме</a>
+                                    </div>
+
+                                    <button class="car-mobile">Автомобильные </button>
+                                                
+                                    <div class="menu_btn_container2 active_car hide2">
+                                        <a href="#">Автомобильные перевозки</a>
+                                        <a href="#">Железнодорожные перевозки</a>
+                                        <a href="#">LCL/FCL перевозки</a>
+                                        <a href="#">Крупнотоннажные и<br> негабаритные перевозки</a>
+                                    </div>
+
+                                <button class="button_mobile_train">Железнодорожные </button>
+                                    <div class="menu_btn_container2 active_train hide3">
+                                        <a href="#">Воздушные перевозки</a>
+                                        <a href="#">LCL/FCL перевозки</a>
+                                    </div>
+
+                                <button class="button_mobile_info">Полезное</button>
+                                    <div class="menu_btn_container2 active_info hide4">
+                                        <a href="#">Воздушные перевозки</a>
+                                        <a href="#">LCL/FCL перевозки</a>
+                                    </div>
+                            </div>
+                        
+                        <button class="menu-service">Услуги</button>
+                        <button class="menu-service_mobile">Услуги</button>
+
+                        <button class="menu-industry">Отрасли</button>
+                        <button class="menu-industry_mobile">Отрасли</button>
+
+                        <button class="menu-options">О нас</button>
+                        <button class="menu-options_mobile">О нас</button>
+
+                        <button class="menu-news">Новости</button>
+                        <button class="menu-news_mobile">Новости</button>
+
+                        <button class="menu-sotrudnik">Сотрудничество</button>
+                        <button class="menu-sotrudnik_mobile">Сотрудничество</button>
+
+                        <button class="menu-vacation">Вакансии</button>
+                        <button class="menu-vacation_mobile">Вакансии</button>
+
+                        <button class="menu-faq">FAQ</button>
+                        <button class="menu-faq_mobile">FAQ</button>
+                    </div>
+
+
+
+
+                    <div class="mobile_selector_lang">
+                        <div class="lang_flex">
+                            <div class="form-group__lang_mobile">
+                                <div class="dropdown__lang">
+                                    <button class="dropdown__button__lang">RU</button>
+                                    <ul class="dropdown__list__lang">
+                                        <li class="dropdown__list-item__lang" data-value="option">Английский</li>
+                                        <li class="dropdown__list-item__lang" data-value="option">Русский</li>
+                                        <li class="dropdown__list-item__lang" data-value="option">Польский</li>
+                                        <li class="dropdown__list-item__lang" data-value="option">Немецкий</li>
+                                    </ul>
+                                    <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="hr__title_mobile">
+
+                    <div class="contacs_mobile">
+                        <a href="tel:+79999999999" class="header__phone_mobile">
+                            <img src="./imgs/icons/tel.svg" class="phone_img_mobile" alt="Телефон">
+                            <strong class="number">+7 (999) 999-99-99</strong>
+                        </a>
+                        <div class="header__socials_mobile">
+                            <a href="#" class="header__social_mobile">
+                                <img src="./imgs/icons/mail.svg" alt="Почта">
+                            </a>
+            
+                            <a href="#" class="header__social_mobile">
+                                <img src="./imgs/icons/vk.svg" alt="VK">
+                            </a>
+            
+                            <a href="#" class="header__social_mobile">
+                                <img src="./imgs/icons/Whatsapp.svg" alt="Whats app">
+                            </a>
+                        </div>
+            
+                    </div>
                 </div>
+
+                
+                <div class="menu-solutions1 menu_vision2">
+                        <div class="menu_btn_container2">
+                            <button class="shipping_menu">Морские перевозки</button>
+                            <button class="ground_transportation">Наземные перевозки</button>
+                            <button class="air_transportation">Воздушные перевозки</button>
+                        </div>
+                </div>
+
+                <div class="menu-service1 menu_vision3">
+                    <div class="menu_btn_container2">
+                        <button>Таможенное оформление</button>
+                        <button>Страхование грузов</button>
+                        <button>Экспедирование</button>
+                        <button>Складская логистика</button>
+                        <button>Реализация дизтоплива</button>
+                        <button>Автозапчасти для грузовиков</button>
+                    </div>
+                </div>
+
+                <div class="menu-industry1 menu_vision4">
+                    <div class="menu_btn_container2">
+                        <button>Сельское хозяйство</button>
+                        <button>Автомобильная<br> промышленность</button>
+                        <button>Химикаты, нефтехимия и<br> изделия из пластмасс</button>
+                        <button>Продукты питания и <br>напитки</button>
+                        <button>Фрукты и овощи</button>
+                        <button>Горнодобывающая<br> промышленность</button>
+                        <button>Фармацевтическая<br> продукция</button>
+                        <button>Розничная торговля</button>
+                        <button>Проектная логистика</button>
+                        <button>Крупнотоннажные и<br> негабаритные грузы</button>
+                    </div>
+                </div>
+
+                <div class="menu-options1 menu_vision5">
+                    <div class="menu_btn_container2">
+                        <button>О компании</button>
+                        <button>Руководство компании</button>
+                        <button>Миссия и ценности</button>
+                        <button>История</button>
+                        <button>Реквизиты</button>
+                        <button>Портфолио</button>
+                        <button>Наши партнёры</button>
+                    </div>
+                </div>
+
+
+
+                <div class="menu-solutions2 menu_vision_shiping">
+                    <div class="menu_btn_container2">
+                        <a href="#">Морские перевозки</a>
+                        <a href="#">Генеральные/сухие перевозки</a>
+                        <a href="#">Рефрижераторные грузы</a>
+                        <a href="#">Проектные грузы</a>
+                        <a href="#">Наливные грузы</a>
+                        <a href="#">Розничная торговля</a>
+                        <a href="#">LCL/FCL перевозки</a>
+                        <a href="#">Крупнотоннажные и<br> негабаритные перевозки</a>
+                    </div>
+                </div>
+
+                <div class="menu-solutions2-1 menu_vision_ground">
+                    <div class="menu_btn_container2">
+                        <a href="#">Автомобильные перевозки</a>
+                        <a href="#">Железнодорожные перевозки</a>
+                        <a href="#">LCL/FCL перевозки</a>
+                        <a href="#">Крупнотоннажные и<br> негабаритные перевозки</a>
+                    </div>
+                </div>
+                
+                <div class="menu-solutions2-3 menu_vision_air">
+                    <div class="menu_btn_container2">
+                        <a href="#">Воздушные перевозки</a>
+                        <a href="#">LCL/FCL перевозки</a>
+                    </div>
+                </div>
+
+
                 <a href="#" class="header__logo">
                     <img src="./imgs/logo.svg" alt="Галеас">
                 </a>          
@@ -65,7 +237,6 @@
                     </a>
                 </div>
     
-                    
                 <div class="lang_flex">
                     <div class="form-group__lang">
                         <div class="dropdown__lang">
@@ -80,10 +251,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-    </header>
+    </header> 
 
     <main>
         <section class="breadcrumb container">

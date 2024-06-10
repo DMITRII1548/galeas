@@ -1,69 +1,141 @@
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
 
-let solutions = document.querySelector('.menu-solutions');
-let service = document.querySelector('.menu-service');
-let industry = document.querySelector('.menu-industry');
-let options = document.querySelector('.menu-options');
-let news = document.querySelector('.menu-news');
-let sotrudnik = document.querySelector('.menu-sotrudnik');
-let vacation = document.querySelector('.menu-vacation');
-let faq = document.querySelector('.menu-faq');
+/* desktop*/
+let menuSolutions = document.querySelector('.menu-solutions');
+let menuService = document.querySelector('.menu-service');
+let menuIndustry = document.querySelector('.menu-industry');
+let menuOptions = document.querySelector('.menu-options');
 
-let shipping = document.querySelector('.shipping_menu');
-let ground = document.querySelector('.ground_transportation');
+
+
+
+//solutions
+let menuSolutions1 = document.querySelector('.menu-solutions1');
+
+let Shipping = document.querySelector('.shipping_menu');
+let Ground = document.querySelector('.ground_transportation');
 let air = document.querySelector('.air_transportation');
 
+let menuSolutions2 = document.querySelector('.menu-solutions2');
+let menuSolutions2_1 = document.querySelector('.menu-solutions2-1');
+let menuSolutions2_3 = document.querySelector('.menu-solutions2-3');
+
+//service
+let menuService1 = document.querySelector('.menu-service1');
+
+//industry
+let menuIndustry1 = document.querySelector('.menu-industry1');
+
+//options
+let menuOptions1 = document.querySelector('.menu-options1');
 
 
-let menu1 = document.querySelector('.menu1');
-let menu3 = document.querySelector('.menu3');
-let menu5 = document.querySelector('.menu5');
-let menu7 = document.querySelector('.menu7');
-let menu8 = document.querySelector('.menu8');
+
+//mobile
+let mobileSolution = document.querySelector('.menu-solutions_mobile');
+
+let infoShipping = document.querySelector('.button_mobile_shipping');
+
+let infoCar = document.querySelector('.car-mobile');
+
+let infoTrain = document.querySelector('.button_mobile_train');
+
+let infoInfo = document.querySelector('.button_mobile_info');
+
+//info mobile
+let button = document.querySelector('.menu_moba');
+
+let shippingNav = document.querySelector('.active_shipping');
+
+let carNav = document.querySelector('.active_car');
+
+let trainNav = document.querySelector('.button_mobile_train');
+
+let infoNav = document.querySelector('.button_mobile_info');
+
+mobileSolution.addEventListener('click', function(){
+	button.classList.toggle('hide_mobile_menu');
+});
+
+infoShipping.addEventListener('click', function(){
+	shippingNav.classList.toggle('hide1');
+});
+
+infoCar.addEventListener('click', function(){
+	carNav.classList.toggle('hide2');
+});
+
+infoTrain.addEventListener('click', function(){
+	trainNav.classList.toggle('hide3');
+});
+
+infoInfo.addEventListener('click', function(){
+	infoNav.classList.toggle('hide4');
+});
 
 
 
-let menu2 = document.querySelector('.menu2');
-let menu4 = document.querySelector('.menu4');
-let menu6 = document.querySelector('.menu6');
+
 
 
 menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
+
+	if (!menuSolutions1.classList.toggle('menu_vision2')) {
+		menuSolutions1.classList.toggle('menu_vision2');
+	}
+	if (!menuSolutions2.classList.toggle('menu_vision_shiping')) {
+		menuSolutions2.classList.toggle('menu_vision_shiping');
+	}
+	if (!menuSolutions2_1.classList.toggle('menu_vision_ground')) {
+		menuSolutions2_1.classList.toggle('menu_vision_ground');
+	}
+	if (!menuSolutions2_3.classList.toggle('menu_vision_air')) {
+		menuSolutions2_3.classList.toggle('menu_vision_air');
+	}
+	if (!menuService1.classList.toggle('menu_vision3')) {
+		menuService1.classList.toggle('menu_vision3');
+	}
+	if (!menuIndustry1.classList.toggle('menu_vision4')) {
+		menuIndustry1.classList.toggle('menu_vision4');
+	}
+	if (!menuOptions1.classList.toggle('menu_vision5')) {
+		menuOptions1.classList.toggle('menu_vision5');
+	}
 });
 
-solutions.addEventListener('click', function(){
-	menu1.classList.toggle('menu_vision');
-});
-
-service.addEventListener('click', function(){
-	menu3.classList.toggle('menu_vision2');
-});
-
-industry.addEventListener('click', function(){
-	menu5.classList.toggle('menu_vision3');
-});
-
-options.addEventListener('click', function(){
-	menu7.classList.toggle('menu_vision4');
+menuSolutions.addEventListener('click', function(){
+	menuSolutions1.classList.toggle('menu_vision2');
 });
 
 
-
-
-
-shipping.addEventListener('click', function(){
-	menu2.classList.toggle('menu_vision_shiping');
+Shipping.addEventListener('click', function(){
+	menuSolutions2.classList.toggle('menu_vision_shiping');
 });
 
-ground.addEventListener('click', function(){
-	menu4.classList.toggle('menu_vision_ground');
+Ground.addEventListener('click', function(){
+	menuSolutions2_1.classList.toggle('menu_vision_ground');
 });
 
 air.addEventListener('click', function(){
-	menu6.classList.toggle('menu_vision_air');
+	menuSolutions2_3.classList.toggle('menu_vision_air');
+});
+
+
+
+
+menuService.addEventListener('click', function(){
+	menuService1.classList.toggle('menu_vision3');
+});
+
+menuIndustry.addEventListener('click', function(){
+	menuIndustry1.classList.toggle('menu_vision4');
+});
+
+menuOptions.addEventListener('click', function(){
+	menuOptions1.classList.toggle('menu_vision5');
 });
 
 

@@ -6,6 +6,10 @@
 	overflow: hidden;
 }
 
+.menu.active {
+	padding-top: 120px;
+}
+
 .menu-btn span {
 	width: 30px;
 	height: 2px;
@@ -24,50 +28,55 @@
 	top: calc(50% + 5px);
 }
 
-.menu2 , .menu4,  .menu6{
+.menu{
 	position: absolute;
 	top: 0;
-    left: 1410px;
+    left: 0;
 	width: 470px;
 	height: 1000px;
-	padding: 15px;
-  	padding-top: 158px;
-	padding-left: 86px;
 	background-color: white;
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
- 	z-index: 5;
+ 	z-index: 20;
 }
 
-
-.menu1 , .menu3 , .menu5, .menu7 {
+.menu-solutions1 , .menu-service1 , .menu-industry1, .menu-options1 {
 	position: absolute;
 	top: 0;
 	left: 940px;
 	width: 470px;
 	height: 1000px;
-	padding: 15px;
-  	padding-top: 158px;
-	padding-left: 86px;
 	background-color: white;
-	transform: translateX(-100%);
 	transition: transform 0.5s; 
-  z-index: 10;
+  	z-index: 10;
 }
 
-.menu {
+.menu-solutions2, .menu-solutions2-1, .menu-solutions2-3{
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 940px;
 	width: 470px;
 	height: 1000px;
-	padding: 15px;
-  padding-top: 158px;
-  padding-left: 130px;
 	background-color: white;
-	transform: translateX(-100%);
 	transition: transform 0.5s; 
-  z-index: 15;
+  	z-index: 10;
+}
+
+.hide_mobile_menu
+{
+	display: none;
+}
+
+
+.menu-solutions1 , .menu-service1 , .menu-industry1, .menu-options1 {
+	position: absolute;
+	top: 0;
+	left: 470px;
+	width: 470px;
+	height: 1000px;
+	background-color: white;
+	transition: transform 0.5s; 
+  	z-index: 10;
 }
 
 .menu.active {
@@ -75,9 +84,26 @@
 }
 
 
-.menu_vision, .menu_vision2, .menu_vision3, .menu_vision4, .menu_vision5, .menu_vision6, .menu_vision7, .menu_vision8{
+.menu_vision1{
 	display: none;
 }
+
+.menu_vision2{
+	display: none;
+}
+
+.menu_vision3{
+	display: none;
+}
+
+.menu_vision4{
+	display: none;
+}
+
+.menu_vision5{
+	display: none;
+}
+
 
 .menu_vision_shiping{
 	display: none;
@@ -96,102 +122,47 @@
 }
 
 
-.menu2 li a{ 
-	color: black;
-	margin-bottom: 20px;
-
-	align-items: flex-start;
-}
-
-.menu2 nav{
-	display: flex;
+.menu_btn_container {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
-
-	align-items: flex-start;
-}
-
-
-.menu4 nav{
-	display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-	align-items: flex-start;
-}
-
-.menu5 nav{
-	display: flex;
-    flex-direction: column;
-
-	align-items: flex-start;
-}
-
-.menu7 nav{
-	display: flex;
-    flex-direction: column;
+    align-items: flex-start;
 	gap: 20px;
-
-	align-items: flex-start;
-	
+	font-family: 'Montserrat';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29.26px;
+	text-align: left;
+    margin: 0 auto auto 134px;
 }
 
-
-
-.menu6 nav{
-	display: flex;
+.menu_btn_container2 {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+	gap: 20px;
+	font-family: 'Montserrat';
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29.26px;
+	text-align: left;
+	margin: 120px auto auto 0;
 }
 
-
-
-.menu3 li a{ 
+.menu_btn_container2 a {
 	color: black;
-	margin-bottom: 20px;
+	font-weight: 400;
 }
 
-.menu4 li a{ 
-	color: black;
-	margin-bottom: 20px;
-}
-
-.menu5 li a{ 
-	color: black;
-	margin-bottom: 20px;
-}
-
-.menu6 li a{ 
-	color: black;
-	margin-bottom: 20px;
-}
-
-.menu7 li a{ 
-	color: black;
-	margin-bottom: 20px;
-}
-
-.menu, .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10 button{
-	margin-bottom: 20px;
-}
-
-.menu, .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10  li {
-  color: black;
-	list-style-type: none;
-  padding-bottom: 20px;
-  font-size: 24px;
-  gap: 20px;
-}
-
-.menu, .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10 li:focus {
+.menu_btn_container button:focus {
+	font-size: 24px;
 	font-weight: 700;
-	font-size: 20px;
-  }
-
-.menu, .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10  li a{
-  color: black;
+	line-height: 29.26px;
 }
 
+.menu_btn_container2 button:focus {
+	font-size: 24px;
+	font-weight: 700;
+}
 
 
 .menu-btn.active span:first-of-type {
@@ -208,6 +179,184 @@
 	transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+
+.mobile_selector_lang{
+	display: none;
+}
+
+.hr__title_mobile{
+	display: none;
+}
+
+.contacs_mobile{
+	display: flex;
+}
+
+.header__phone_mobile{
+	color: black;
+	font-size: 24px;
+}
+
+.phone_img_mobile{
+	margin-right: 10px;
+}
+
+.header__socials_mobile{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+	margin-top: 40px;
+}
+
+.contacs_mobile{
+	display: flex;
+    flex-direction: column;
+}
+
+.info_card_mobile1
+{
+	display: none;
+}
+
+.info_card_mobile2
+{
+	display: none;
+}
+
+.info_card_mobile3 	{
+	display: none;
+}
+
+.info_card_mobile4	{
+	display: none;
+}
+
+.info_card_mobile5	{
+	display: none;
+}
+
+.info_card_mobile6	{
+	display: none;
+}
+
+.info_card_mobile7	{
+	display: none;
+}
+
+.info_card_mobile8	{
+	display: none;
+}
+
+.info_card_mobile9	{
+	display: none;
+}
+
+.menu-solutions_mobile{
+	display: none;	
+}
+
+.menu-service_mobile{
+	display: none;
+}
+
+.menu-industry_mobile{
+	display: none;
+}
+
+.menu-options_mobile{
+	display: none;
+}
+
+.menu-news_mobile{
+	display: none;
+}
+
+.menu-sotrudnik_mobile{
+	display: none;
+}
+
+.menu-vacation_mobile{
+	display: none;
+}
+
+.menu-faq_mobile{
+	display: none;
+}
+
+
+.menu_mobile{
+	display: none;
+}
+
+
+.contacs_mobile{
+	display: none;
+}
+
+.menu-btn.active span:first-of-type {
+	transform: translateX(100%);
+}
+
+.menu-btn.active span:nth-of-type(2) {
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-btn.active span:nth-of-type(3) {
+	top: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.menu_vision_shiping_mobile{
+	display: none;
+}
+
+.menu_vision_ground_mobile{
+	display: none;
+}
+
+.menu_vision_air_mobile{
+	display: none;
+}
+
+.shipping_menu-mobile{
+	display: none;
+}
+
+.ground_transportation-mobile{
+	display: none;
+}
+
+.air_transportation-mobile{
+	display: none;
+}
+
+.info_button-mobile{
+	display: none;
+}
+
+.info_vision_mobile{
+	display: none;
+}
+
+.hide1{
+	display: none;
+}
+
+.hide2{
+	display: none;
+}
+
+.hide3{
+	display: none;
+}
+
+.hide4{
+	display: none;
+}
+
 @media screen and (max-width:1024px){
 	.menu {
 		position: absolute;
@@ -215,113 +364,12 @@
 		left: 0;
 		width: 375px;
 		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
 		background-color: white;
 		transform: translateX(-100%);
 		transition: transform 0.5s;
 		z-index: 15;
 	}
 
-	.menu1 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
-	.menu2 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
-	.menu3 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
-	.menu4 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
-	.menu5 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
-	.menu6 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
-	.menu7 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 375px;
-		height: 1000px;
-		padding: 15px;
-		padding-top: 158px;
-		padding-left: 130px;
-		background-color: white;
-		transform: translateX(-100%);
-		transition: transform 0.5s;
-		z-index: 15;
-	}
 }
 
 
@@ -331,7 +379,7 @@
         top: 0;
         left: 0;
         width: 360px;
-        height: 768px;
+        height: auto;
         padding: 15px;
         padding-top: 97px;
         padding-left: 23px;
@@ -340,4 +388,215 @@
         transition: transform 0.5s;
         z-index: 10;
     }
+
+	.menu_moba{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+	}
+
+
+	.menu_btn_container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+		font-family: 'Montserrat';
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 29.26px;
+		text-align: left;
+		margin: 10px auto auto 0;
+	}
+
+	.menu_btn_container2 {
+		margin: 0 auto;
+	}
+
+
+    .mobile_selector_lang {
+        display: block;
+        z-index: 200;
+        position: absolute;
+        top: 24px;
+        left: 241px;
+    }
+
+	.hr__title_mobile{
+		display: block;
+		margin-top: 40px;
+		border: 1px solid #D9D9D9;
+		width: auto;
+		margin-bottom: 40px;
+	}
+
+	.menu-solutions{
+		display: none;
+	}
+
+	.menu-service{
+		display: none;
+	}
+
+	.menu-industry{
+		display: none;
+	}
+
+	.menu-options{
+		display: none;
+	}
+
+	.menu-news{
+		display: none;
+	}
+
+	.menu-sotrudnik{
+		display: none;
+	}
+	
+	.menu-vacation{
+		display: none;
+	}
+
+	.menu-faq{
+		display: none;
+	}
+
+
+	.mobile_selector_lang{
+		display: block;
+	}
+	
+	.hr__title_mobile{
+		display: block;
+	}
+	
+	.contacs_mobile{
+		display: flex;
+	}
+	
+	.header__phone_mobile{
+		color: black;
+		font-size: 24px;
+	}
+	
+	.phone_img_mobile{
+		margin-right: 10px;
+	}
+	
+	.header__socials_mobile{
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	
+		margin-top: 40px;
+	}
+	
+	.contacs_mobile{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.info_card_mobile1
+	{
+		display: block;
+	}
+	
+	.info_card_mobile2
+	{
+		display: block;
+	}
+	
+	.info_card_mobile3 	{
+		display: block;
+	}
+	
+	.info_card_mobile4	{
+		display: block;
+	}
+	
+	.info_card_mobile5	{
+		display: block;
+	}
+	
+	.info_card_mobile6	{
+		display: block;
+	}
+	
+	.info_card_mobile7	{
+		display: block;
+	}
+	
+	.info_card_mobile8	{
+		display: block;
+	}
+	
+	.info_card_mobile9	{
+		display: block;
+	}
+	
+	.menu-solutions_mobile{
+		display: block;	
+	}
+	
+	.menu-service_mobile{
+		display: block;
+	}
+	
+	.menu-industry_mobile{
+		display: none;
+	}
+	
+	.menu-options_mobile{
+		display: none;
+	}
+	
+	.menu-news_mobile{
+		display: block;
+	}
+	
+	.menu-sotrudnik_mobile{
+		display: block;
+	}
+	
+	.menu-vacation_mobile{
+		display: block;
+	}
+	
+	.menu-faq_mobile{
+		display: block;
+	}
+	
+	
+	.menu_mobile{
+		display: none;
+	}
+	
+	
+	.contacs_mobile{
+		display: block;
+	}
+
+	.menu_btn_solution2{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 40px;
+	}
+
+	.menu_btn_container2 a{
+		font-family: 'Montserrat';
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 19.5px;
+		text-align: left;
+
+	}
+
+	.hide_mobile_menu{
+		display: none;
+	}	
+
+
 }
