@@ -387,7 +387,6 @@ legend {
 }
 
 p{
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 16px
 }
@@ -497,7 +496,6 @@ p{
 .navigation__a a{
   color: #303030;
   font-weight: 400;
-  font-family: 'Montserrat';
   margin: 20px;
 }
 
@@ -509,7 +507,6 @@ p{
 
 .navigation__title{
   font-weight: 700;
-  font-family: 'Montserrat';
   font-size: 24px;
   margin-bottom: 40px;
 }
