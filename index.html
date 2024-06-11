@@ -16,6 +16,7 @@
     
     <link rel="stylesheet" href="./css/selector.css">
     <link rel="stylesheet" href="./css/dropdown_lang.css">
+    <link rel="stylesheet" href="./css/dropdown_lang_mobile.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -94,8 +95,8 @@
                         <div class="lang_flex">
                             <div class="form-group__lang_mobile">
                                 <div class="dropdown__lang">
-                                    <button class="dropdown__button__lang">RU</button>
-                                    <ul class="dropdown__list__lang">
+                                    <button class="dropdown__button__lang_mobile">RU</button>
+                                    <ul class="dropdown__list__lang_mobile">
                                         <li class="dropdown__list-item__lang" data-value="option">Английский</li>
                                         <li class="dropdown__list-item__lang" data-value="option">Русский</li>
                                         <li class="dropdown__list-item__lang" data-value="option">Польский</li>
@@ -337,10 +338,10 @@
     
     
                 <div class="solution__card">
-                    <div class="solution__background">
+                    <div class="solution__background" id="sol-bg">
                         <div class="solution__flex">
-                            <div class="card__wrapper">
-                                <div class="front__card">
+                            <div class="card__wrapper card__wrapper--1">
+                                <!-- <div class="front__card">
                                     <div class="img">
                                         <img src="./imgs/icons/boat.png" alt="">
                                     </div>
@@ -357,12 +358,36 @@
                                         <li>Смешанные проектные мультимодальных задачи</li>
                                         <li>RO-RO перевозки на пароме</li>
                                     </ul>
+                                </div> -->
+                                <div class="card">
+                                    <div class="first-content">
+                                        <div class="img">
+                                            <img src="./imgs/icons/boat.png" alt="">
+                                        </div>
+                                        <div class="card__front__text">
+                                            <h1>Морские</h1>
+                                        </div>
+                                    </div>
+                                    <div class="second-content">
+                                        <div class="second-content">
+                                            <div class="second-content">
+                                                <img src="./imgs/icons/boat.png" alt="">
+                                                <h1>Морские</h1>
+                                                <ul>
+                                                    <li>Перевозки контейнерных грузов</li>
+                                                    <li>Перевозки негабаритных грузов</li>
+                                                    <li>Смешанные проектные мультимодальных задачи</li>
+                                                    <li>RO-RO перевозки на пароме</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
     
-                            <div class="card__wrapper">
-                                <div class="front__card">
+                            <div class="card__wrapper " id="card__wrapper--2">
+                                <!-- <div class="front__card">
                                     <div class="img">
                                         <img src="./imgs/icons/car.png" alt="">
                                     </div>
@@ -382,12 +407,35 @@
                                         <li>Перевозка опасных грузов</li>
                                         <li>Перевозка сборных грузов</li>
                                     </ul>
-                                </div>
+                                </div> -->
+                                    <div class="card">
+                                        <div class="first-content">
+                                            <div class="img">
+                                                <img src="./imgs/icons/car.png" alt="">
+                                            </div>
+                                            <div class="card__front__text">
+                                                <h1>Автомобильные</h1>
+                                            </div>
+                                        </div>
+                                        <div class="second-content">
+                                            <div class="second-content">
+                                                <img src="./imgs/icons/car.png" alt="">
+                                                <h1>Автомобильные</h1>
+                                                <ul>
+                                                    <li>Перевозки рефрижераторных контейнеров</li>
+                                                    <li>Контейнерные перевозки</li>
+                                                    <li>Негабаритные перевозки</li>
+                                                    <li>Перевозка опасных грузов</li>
+                                                    <li>Перевозка сборных грузов</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                             </div>
                     
     
-                            <div class="card__wrapper">
-                                <div class="front__card">
+                            <div class="card__wrapper " id="card__wrapper--3">
+                                <!-- <div class="front__card">
                                     <div class="img">
                                         <img src="./imgs/icons/train.png" alt="">
                                     </div>
@@ -406,13 +454,37 @@
                                         <li>Перевозка скорыми поездами<br>
                                             Китай - Москва</li>
                                     </ul>
+                                </div> -->
+                                <div class="card">
+                                    <div class="first-content">
+                                        <div class="img">
+                                            <img src="./imgs/icons/train.png" alt="">
+                                        </div>
+                                        <div class="card__front__text">
+                                            <h1>Железнодорожные</h1>
+                                        </div>
+                                    </div>
+                                    <div class="second-content">
+                                        <div class="second-content">
+                                            <img src="./imgs/icons/train.png" alt="">
+                                            <h1>Железнодорожные</h1>
+                                            <ul>
+                                                <li>Перевозки контейнеров “Трансконтейнер”<br>
+                                                    Новороссийск - Регионы</li>
+                                                <li>Перевозка линейных контейнеров<br>
+                                                    Владивосток - Регионы</li>
+                                                <li>Перевозка скорыми поездами<br>
+                                                    Китай - Москва</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
     
     
-                            <div class="card__wrapper">
-                                <div class="front__card">
+                            <div class="card__wrapper " id="card__wrapper--4">
+                                <!-- <div class="front__card">
                                     <div class="img">
                                         <img src="./imgs/icons/info.png" alt="">
                                     </div>
@@ -429,6 +501,27 @@
                                         <li>Маркировка</li>
                                         <li>Экспедирование</li>
                                     </ul>
+                                </div> -->
+
+                                <div class="card">
+                                    <div class="first-content">
+                                        <div class="img">
+                                            <img src="./imgs/icons/info.png" alt="">
+                                        </div>
+                                        <div class="card__front__text">
+                                            <h1>Полезные</h1>
+                                        </div>
+                                    </div>
+                                    <div class="second-content">
+                                        <img src="./imgs/icons/info.png" alt="">
+                                        <h1>Полезные</h1>
+                                        <ul>
+                                            <li>Таможенное оформление</li>
+                                            <li>Страхование</li>
+                                            <li>Маркировка</li>
+                                            <li>Экспедирование</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1029,6 +1122,38 @@
 
             window = !window 
         }
+    }
+}
+
+{
+
+    const bg = document.getElementById('sol-bg')
+    const card2 = document.getElementById("card__wrapper--2")
+    const card3 = document.getElementById("card__wrapper--3")
+    const card4 = document.getElementById("card__wrapper--4")
+
+    card2.onmouseover = () => {
+        bg.classList.add('solution__background--2')
+    }
+
+    card2.onmouseout = () => {
+        bg.classList.remove('solution__background--2')
+    }
+
+    card3.onmouseover = () => {
+        bg.classList.add('solution__background--3')
+    }
+
+    card3.onmouseout = () => {
+        bg.classList.remove('solution__background--3')
+    }
+
+    card4.onmouseover = () => {
+        bg.classList.add('solution__background--4')
+    }
+
+    card4.onmouseout = () => {
+        bg.classList.remove('solution__background--4')
     }
 }
 </script>

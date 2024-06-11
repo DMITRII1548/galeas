@@ -40,6 +40,7 @@
 .solution__item {
     position: relative;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .solution__item::before {
