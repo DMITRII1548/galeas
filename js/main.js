@@ -50,9 +50,9 @@ let shippingNav = document.querySelector('.active_shipping');
 
 let carNav = document.querySelector('.active_car');
 
-let trainNav = document.querySelector('.button_mobile_train');
+let trainNav = document.querySelector('.active_train');
 
-let infoNav = document.querySelector('.button_mobile_info');
+let infoNav = document.querySelector('.active_info');
 
 mobileSolution.addEventListener('click', function(){
 	button.classList.toggle('hide_mobile_menu');
@@ -67,7 +67,7 @@ infoCar.addEventListener('click', function(){
 });
 
 infoTrain.addEventListener('click', function(){
-	trainNav.classList.toggle('hide3');
+	trainNav.classList.toggle('hide5');
 });
 
 infoInfo.addEventListener('click', function(){

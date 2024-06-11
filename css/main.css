@@ -10,6 +10,16 @@
   border: none;
 }
 
+@font-face {
+  font-family: 'Bebas Neue Cyrillic' sans-serif;
+  src: url("./../fonts/bebasneuecyrillic.ttf");
+}
+
+body {
+  font-family: 'Montserrat' sans-serif;
+  background-color: #fff;
+}
+
 *,
 *::before,
 *::after {
@@ -127,6 +137,7 @@ body {
   padding-top: 80px;
 }
 
+
 .info__text{
   color: white;
   border-left: 20px solid #DDAA21;
@@ -207,6 +218,13 @@ label {
 .input1, .input2 {
   display: grid;
   justify-items: center;
+}
+
+
+@media screen and (max-width: 999px) {
+  .input2 {
+    gap: 20px;
+  }
 }
 
 .input2 > input{
@@ -330,6 +348,9 @@ h1{
   height: 425px;
 }
 
+#sol__title {
+  font-family: 'Montserrat', sans-serif
+}
 
 
 
@@ -772,17 +793,6 @@ p{
   display: none;
 }
 
-
-@font-face {
-  font-family: "Bebas Neue Cyrillic";
-  src: url("./../fonts/bebasneuecyrillic.ttf");
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #fff;
-
-}
 
 .banner__info{
   color: white;

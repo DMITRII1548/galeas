@@ -1,4 +1,5 @@
 .menu-btn {
+	cursor: pointer;
 	width: 30px;
 	height: 30px;
 	position: relative;
@@ -7,6 +8,8 @@
 }
 
 .menu.active {
+	height: 100vh;
+	overflow-y: auto;
 	padding-top: 120px;
 }
 
@@ -38,6 +41,10 @@
 	transform: translateX(-100%);
 	transition: transform 0.5s; 
  	z-index: 20;
+}
+
+.scrollbar{
+	overflow-y: auto;
 }
 
 .menu-solutions1 , .menu-service1 , .menu-industry1, .menu-options1 {
@@ -162,6 +169,16 @@
 .menu_btn_container2 button:focus {
 	font-size: 24px;
 	font-weight: 700;
+}
+
+.menu_moba {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.menu_btn_container{
+	overflow-y: auto;
+	max-height: 500px;
 }
 
 
@@ -349,12 +366,19 @@
 	display: none;
 }
 
-.hide3{
+.hide5{
 	display: none;
 }
 
 .hide4{
 	display: none;
+}
+
+
+
+.button_hiderr{
+	display: flex;
+	margin: 20px 0;
 }
 
 @media screen and (max-width:1024px){
@@ -378,7 +402,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: auto;
+        height: 1000px;
         padding: 15px;
         padding-top: 97px;
         padding-left: 23px;
@@ -397,7 +421,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: auto;
+        height: 1000px;
         padding: 15px;
         padding-top: 97px;
         padding-left: 23px;
@@ -428,12 +452,6 @@
 		left: -21px;
 	}
 
-	.menu_moba{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
-	}
 
 
 	.menu_btn_container {
@@ -644,7 +662,7 @@
         top: 0;
         left: 0;
         width: 375px;
-        height: auto;
+        height: 1000px;
         padding: 15px;
         padding-top: 97px;
         padding-left: 23px;
@@ -652,7 +670,6 @@
         transform: translateX(-100%);
         transition: transform 0.5s;
         z-index: 10;
-		overflow-y: auto;
     }
 
 	.form-group__lang_mobile{

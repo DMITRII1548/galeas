@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/btn.css">
     <link rel="stylesheet" href="./css/breadcrumbs.css">
     <link rel="stylesheet" href="./css/questions.css">
     <link rel="stylesheet" href="./css/solutions.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/dropdown_lang.css">
     <link rel="stylesheet" href="./css/shipping.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/logistics.css">
+    <link rel="stylesheet" href="./css/dropdown_lang_mobile.css">
+    <link rel="stylesheet" href="./css/dropdown_lang.css">
     <link rel="stylesheet" href="./css/contacs.css">
     <link rel="stylesheet" href="./css/map.css">
-    <link rel="stylesheet" href="./css/selector.css">
 </head>
 <body>
     <header class="header">
@@ -289,42 +288,46 @@
                     </div>
                 </div>
         </section>
-
-        <section class="banner container">
-            <h1 class="header__card__text"> ОСТАВИТЬ ЗАЯВКУ</h1>
-            <div class="banner__content">
-                <div class="header__card">
-                    <div class="info__card">
-                        <!-- <form action=""> -->
-                            <div class="info__card__flex">
-                                <div class="input1">
-                                    <div class="form-group">
-                                        <div class="dropdown">
-                                            <button class="dropdown__button">Тип услуги </button>
-                                            <ul class="dropdown__list">
-                                                <li class="dropdown__list-item" data-value="option">Тип услуги</li>
-                                                <li class="dropdown__list-item" data-value="option">Тип услуги</li>
-                                                <li class="dropdown__list-item" data-value="option">Тип услуги</li>
-                                                <li class="dropdown__list-item" data-value="option">Тип услуги</li>
-                                                <li class="dropdown__list-item" data-value="option">Тип услуги</li>
-                                            </ul>
-                                            <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+        <div class="background_banner_contact">
+            <div class="background_banner_contact_mobile">
+                <section class="container">
+        
+                        <h1 class="header__card__text"> ОСТАВИТЬ ЗАЯВКУ</h1>
+                        <div class="banner__content">
+                            <div class="header__card">
+                                <div class="info__card">
+                                    <!-- <form action=""> -->
+                                        <div class="info__card__flex">
+                                            <div class="input1">
+                                                <div class="form-group">
+                                                    <div class="dropdown">
+                                                        <button class="dropdown__button">Тип услуги </button>
+                                                        <ul class="dropdown__list">
+                                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                                            <li class="dropdown__list-item" data-value="option">Тип услуги</li>
+                                                        </ul>
+                                                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                                    </div>
+                                                </div>
+                                                <input class="wrapper__input" type="text" placeholder="Пункт отправления">
+                                                <input class="wrapper__input" type="text" placeholder="Пункт получения">
+                                            </div>
+                                            <div class="input2">
+                                                <input class="wrapper__input" type="text" placeholder="Итоговый вес (KG)">
+                                                <input class="wrapper__input" type="email" placeholder="Email">
+                                                <button class="button1 button2"  type="submit">Отправить <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <input class="wrapper__input" type="text" placeholder="Пункт отправления">
-                                    <input class="wrapper__input" type="text" placeholder="Пункт получения">
-                                </div>
-                                <div class="input2">
-                                    <input class="wrapper__input" type="text" placeholder="Итоговый вес (KG)">
-                                    <input class="wrapper__input" type="email" placeholder="Email">
-                                    <button class="button1 button2"  type="submit">Отправить <img src="./imgs/icons/right-bottom.png" alt=""></button>
+                                    <!-- </form> -->
                                 </div>
                             </div>
-                        <!-- </form> -->
-                    </div>
-                </div>
+                        </div>
+                </section>
             </div>
-        </section>
+        </div>
 
         <section class="solutions container">
             <h2 class="solutions__title">Решения</h2>

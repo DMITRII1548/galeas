@@ -180,6 +180,10 @@ p{
     padding: 120px 0;
 }
 
+.container {
+    margin: 100px 0;
+}
+
 
 .more_wrapper_card{
     width: 460px;
@@ -250,22 +254,6 @@ p{
     color: white;
 }
 
-.logistic_banner_img1{
-    background: url(../imgs/logistic1.png);
-}
-
-.logistic_banner_img2{
-    background: url(../imgs/logistic2.png);
-}
-
-.logistic_banner_img3{
-    background: url(../imgs/logistic3.png);
-}
-
-.logistic_banner_img4{
-    background: url(../imgs/logistic4.png);
-}
-
 
 .logistic_banner_img{
     width: 340px;
@@ -290,13 +278,11 @@ p{
 }
 
 .banner {
-    align-items: center;
     height: 400px;
-
     margin-top: 120px;
     margin-bottom: 120px;
 
-    background: url('../imgs/banner-contacs.png');
+    background: url('../imgs/bg_vrode_norm.png') center no-repeat;
 }
 
 .info__card{
@@ -320,17 +306,17 @@ p{
     font-family: 'Bebas Neue Cyrillic';
   }
 
-.input2{
-    margin-left: 20px;
-  }
+.input1, .input2{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
   
   .input2 > input{
-    margin-bottom: 20px;
     padding-left: 20px;
   }
   
   .input1 > input{
-    margin-bottom: 20px;
     padding-left: 20px;
   }
 
@@ -350,6 +336,12 @@ p{
 @media screen and (max-width: 375px) {
     .info__card__flex input {
         width: 100%;
+    }
+
+    .input1, .input2{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
     }
 }
 
@@ -386,6 +378,7 @@ p{
     display: flex;
     justify-content: space-between;
     margin: 11px 20px;
+    gap: 20px;
 }
   
   .info__card__flex input{
@@ -398,15 +391,28 @@ p{
 
 @media screen and (max-width: 400px) {
     .banner {
-        justify-content: center;
-        background: url('../imgs/banner-contacs.png')no-repeat;
+        height: 400px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    
+        background: url('../imgs/bg_vrode_norm-mobile.png') center no-repeat;
+    }
 
-        height: 300px;
+    .input1, .input2{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
     }
 
     .info__card__flex {
         margin: 0 22px;
         align-items: center;
+    }
+    
+
+    .banner__content{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -423,6 +429,108 @@ p{
 
     max-width: 600px;
 }
+
+.dropdown{
+    position: relative;
+}
+
+
+.dropdown__button{
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    width: 320px;
+    height: 60px;
+    background-color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 19px 17px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.dropdown__button::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    background: url(../imgs/icons/arrow-bottom.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown__list-item:first-child::after{
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    background: url(../imgs/icons/up-arrows.png);
+    width: 24px;
+    height: 24px;
+}
+
+
+.dropdown__list{
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 74px;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 320px;
+    z-index: 5;
+}
+
+.dropdown__list--visible{
+    display: block;
+}
+
+.dropdown__list-item{
+    margin: 0;
+    padding: 0;
+    border: 2px solid #D9D9D9;
+    border-bottom: 0px;
+    padding: 18px 20px;
+    cursor: pointer;
+}
+
+
+.dropdown__list-item:first-child{
+    border-radius: 10px 10px 0 0;
+}
+
+.dropdown__list-item:last-child{
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.dropdown__input-hidden{
+    display: none;
+}
+
+.background_banner_contact {
+    background: url(../imgs/bg_vrode_norm.png);
+    width: 100%;
+    height: 414px;
+    margin: 196px 0;
+}
+
+
+
 
 .btn--banner {
     width: 320px;
@@ -460,19 +568,35 @@ p{
       display: none;
     }
 
+    .background_banner_contact_mobile{
+        background: url(../imgs/bg_vrode_norm-mobile.png) center;
+        width: 100%;
+        height: 588px;
+        display: block;
+    }
+
+    .input1, .input2{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
     .header__card {
-        width: 380px;
-        height: 499px;
+        width: 100%;
+        height: 497px;
     }
 
     .header__logo {
         margin-left: 32px;
     }
 
-    .info__card__flex{
+    .info__card__flex {
         display: flex;
         flex-direction: column;
-      }
+        justify-content: center;
+        align-items: center;
+    }
+
 
       .header__card__text {
         color: white;
@@ -482,15 +606,23 @@ p{
         font-size: 37px;
     }
 
-
-    .input2, .input1 {
-        margin-left: 10px;
+    .banner__content {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        justify-content: center;
     }
+
+
+
+
     
     .banner{
         margin-bottom: 70px;
         height: 687px;
     }
+
+
     
 }  
 
@@ -499,10 +631,14 @@ p{
         margin-left: 34px;
     }
 
-    .container {
-        padding-left: 5px;
-        padding-right: 5px;
+    .background_banner_contact_mobile{
+        background: url(../imgs/bg_vrode_norm-mobile.png) center ;
+        width: 100%;
+        height: 558px;
+        display: block;
     }
+
+
 
     .header__logo {
         margin-left: -10px;
@@ -510,12 +646,48 @@ p{
 
     .header__card {
         width: 100%;
-        height: 499px;
-    }   
+        height: 455px;
+    }
 
     .input1, .input2{
-        margin-left: 1%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
     }
+
+    .info__card__flex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info__card {
+        display: block;
+        padding: 18px 0;
+    }
+
+
+
+    .header__card {
+        width: 100%;
+        height: 455px;
+    }
+    
+    .banner {
+        height: 400px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    
+        background: url('../imgs/bg_vrode_norm-mobile.png') center ;
+    }
+
+
+    .banner__content{
+        display: flex;
+        justify-content: center;
+    }
+
+
 }
 
 @media screen and (max-width:1024px){
@@ -524,13 +696,6 @@ p{
     }
 }
 
-@media screen and (max-width: 400px) {
-    .heading {
-        background: url('../imgs/shiping.png') center no-repeat;
-        height: 360px;
-        padding-top: 60px;
-    }
-}
 
 .heading__content {
     display: grid;
