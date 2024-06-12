@@ -109,11 +109,11 @@ button:active {
 }
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 115px;
 }
 
@@ -250,7 +250,7 @@ label {
 }
 
 h1{
-  font-family: 'Bebas Neue Cyrillic';
+  font-family: 'Bebas Neue Cyrillic', sans-serif;
   font-weight: 400;
 }
 
@@ -504,7 +504,7 @@ p{
 
 .info__map ul{
   color: white;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info__map li{
@@ -634,7 +634,7 @@ p{
 
 .slide__text h1{
  color: #00583A;
- font-family: 'Montserrat';
+ font-family: 'Montserrat', sans-serif;
  font-weight: 600;
  font-size: 16px;
 }
@@ -650,7 +650,7 @@ p{
 }
 
 .front__card h1{
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
 
@@ -690,7 +690,7 @@ p{
 .back__card h1{
   margin-left: 10px;
   font-size: 24px;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   
 }
@@ -826,7 +826,7 @@ p{
 
 .slider__title{
   color: #00583A;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 16px;
   margin: 20px 0;
@@ -835,7 +835,7 @@ p{
 }
 
 .card__text{
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 16px;
   display: flex;
