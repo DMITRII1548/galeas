@@ -12,13 +12,36 @@
     color: #00583A;
 }
 
+.vacations__input-container {
+    width: 100%;
+    position: relative;
+}
+
+.vacations__input-container::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 20px;
+
+    transform: translate(0, -50%);
+
+    background: url('./../imgs/icons/search.svg');
+    width: 20px;
+    height: 20px;
+}
+
 .vacations__input {
     position: relative;
     padding: 20px;
+    padding-left: 50px;
 
     border-radius: 10px;
     border: 2px solid #D9D9D9;
+
+    width: 100%;
 }
+
 
 .vacations__input::placeholder {
     position: relative;

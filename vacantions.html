@@ -28,14 +28,25 @@
                     <span></span>
                     <span></span>
                 </div>
-                <div class="menu">
+                <div class="menu ">
                     <div class="menu_btn_container">
                         <button class="menu-solutions">Решения</button>
+                        <button class="menu-service">Услуги</button>
+                        <button class="menu-industry">Отрасли</button>
+                        <button class="menu-options">О нас</button>
+                        <button class="menu-news">Новости</button>
+                        <button class="menu-sotrudnik">Сотрудничество</button>
+                        <button class="menu-vacation">Вакансии</button>
+                        <button class="menu-faq">FAQ</button>
+
+                        <div class="menu-container">
+                            
+                        </div>
 
                         <button class="menu-solutions_mobile">Решения</button>
                             <div class="menu_moba hide_mobile_menu">
 
-                                <button class="button_mobile_shipping">Морские</button>
+                                <button class="button_mobile_shipping button_hiderr">Морские</button>
 
                                     <div class="menu_btn_container2 active_shipping hide1">
                                         <a href="#">Перевозки контейнерных грузов</a>
@@ -44,7 +55,7 @@
                                         <a href="#">RO-RO перевозки на пароме</a>
                                     </div>
 
-                                    <button class="car-mobile">Автомобильные </button>
+                                    <button class="car-mobile button_hiderr">Автомобильные </button>
                                                 
                                     <div class="menu_btn_container2 active_car hide2">
                                         <a href="#">Автомобильные перевозки</a>
@@ -53,38 +64,25 @@
                                         <a href="#">Крупнотоннажные и<br> негабаритные перевозки</a>
                                     </div>
 
-                                <button class="button_mobile_train">Железнодорожные </button>
-                                    <div class="menu_btn_container2 active_train hide3">
+                                <button class="button_mobile_train button_hiderr">Железнодорожные </button>
+                                    <div class="menu_btn_container2 active_train hide5">
                                         <a href="#">Воздушные перевозки</a>
                                         <a href="#">LCL/FCL перевозки</a>
                                     </div>
 
-                                <button class="button_mobile_info">Полезное</button>
+                                <button class="button_mobile_info button_hiderr">Полезное</button>
                                     <div class="menu_btn_container2 active_info hide4">
                                         <a href="#">Воздушные перевозки</a>
                                         <a href="#">LCL/FCL перевозки</a>
                                     </div>
                             </div>
-                        
-                        <button class="menu-service">Услуги</button>
+                    
                         <button class="menu-service_mobile">Услуги</button>
-
-                        <button class="menu-industry">Отрасли</button>
                         <button class="menu-industry_mobile">Отрасли</button>
-
-                        <button class="menu-options">О нас</button>
                         <button class="menu-options_mobile">О нас</button>
-
-                        <button class="menu-news">Новости</button>
                         <button class="menu-news_mobile">Новости</button>
-
-                        <button class="menu-sotrudnik">Сотрудничество</button>
                         <button class="menu-sotrudnik_mobile">Сотрудничество</button>
-
-                        <button class="menu-vacation">Вакансии</button>
                         <button class="menu-vacation_mobile">Вакансии</button>
-
-                        <button class="menu-faq">FAQ</button>
                         <button class="menu-faq_mobile">FAQ</button>
                     </div>
 
@@ -95,8 +93,8 @@
                         <div class="lang_flex">
                             <div class="form-group__lang_mobile">
                                 <div class="dropdown__lang">
-                                    <button class="dropdown__button__lang">RU</button>
-                                    <ul class="dropdown__list__lang">
+                                    <button class="dropdown__button__lang_mobile">RU</button>
+                                    <ul class="dropdown__list__lang_mobile">
                                         <li class="dropdown__list-item__lang" data-value="option">Английский</li>
                                         <li class="dropdown__list-item__lang" data-value="option">Русский</li>
                                         <li class="dropdown__list-item__lang" data-value="option">Польский</li>
@@ -259,7 +257,9 @@
         </section>
         <section class="vacations container">
             <h2 class="vacations__title">Вакансии</h1>
-            <input type="text" class="vacations__input" placeholder="Поиск">
+            <div class="vacations__input-container">
+                <input type="text" class="vacations__input" placeholder="Поиск">
+            </div>
             <div class="vacations__cards">
                 <div class="vacations__card">
                     <div class="vacations__container">

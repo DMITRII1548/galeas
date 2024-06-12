@@ -13,12 +13,34 @@
     color: #00583A;
 }
 
+.news__items__input-container {
+    width: 100%;
+    position: relative;
+}
+
+.news__items__input-container::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 20px;
+
+    transform: translate(0, -50%);
+
+    background: url('./../imgs/icons/search.svg');
+    width: 20px;
+    height: 20px;
+}
+
 .news-items__input {
     position: relative;
     padding: 20px;
+    padding-left: 50px;
 
     border-radius: 10px;
     border: 2px solid #D9D9D9;
+
+    width: 100%;
 }
 
 .news-items__input::placeholder {
