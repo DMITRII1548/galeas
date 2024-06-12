@@ -83,9 +83,6 @@ menuBtn.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 
-	if (!menuSolutions1.classList.toggle('menu_vision2')) {
-		menuSolutions1.classList.toggle('menu_vision2');
-	}
 	if (!menuSolutions2.classList.toggle('menu_vision_shiping')) {
 		menuSolutions2.classList.toggle('menu_vision_shiping');
 	}
@@ -94,6 +91,10 @@ menuBtn.addEventListener('click', function(){
 	}
 	if (!menuSolutions2_3.classList.toggle('menu_vision_air')) {
 		menuSolutions2_3.classList.toggle('menu_vision_air');
+	}
+
+	if (!menuSolutions1.classList.toggle('menu_vision2')) {
+		menuSolutions1.classList.toggle('menu_vision2');
 	}
 	if (!menuService1.classList.toggle('menu_vision3')) {
 		menuService1.classList.toggle('menu_vision3');
@@ -138,4 +139,16 @@ menuOptions.addEventListener('click', function(){
 	menuOptions1.classList.toggle('menu_vision5');
 });
 
+document.querySelector('.menu-service').onclick = () => {
+	closeSolution()
+}
 
+document.querySelector('.menu-industry').onclick = () => {
+	closeSolution
+}
+
+function closeSolution() {
+	document.querySelector('.menu-solutions2').classList.add('menu_vision_shiping');
+	document.querySelector('.menu-solutions2-1').classList.add('menu_vision_shiping');
+	document.querySelector('.menu-solutions2-3').classList.add('menu_vision_air');
+}

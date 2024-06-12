@@ -134,7 +134,7 @@
     flex-direction: column;
     align-items: flex-start;
 	gap: 20px;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 29.26px;
@@ -147,7 +147,7 @@
     flex-direction: column;
     align-items: flex-start;
 	gap: 20px;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 29.26px;
@@ -169,11 +169,6 @@
 .menu_btn_container2 button:focus {
 	font-size: 24px;
 	font-weight: 700;
-}
-
-.menu_moba {
-    overflow-y: auto;
-    max-height: 300px;
 }
 
 .menu_btn_container{
@@ -459,7 +454,7 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 20px;
-		font-family: 'Montserrat';
+		font-family: 'Montserrat', sans-serif;
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 29.26px;
@@ -643,7 +638,7 @@
 	}
 
 	.menu_btn_container2 a{
-		font-family: 'Montserrat';
+		font-family: 'Montserrat', sans-serif;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 19.5px;
