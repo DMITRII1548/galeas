@@ -114,17 +114,14 @@ menuSolutions.addEventListener('click', function(){
 
 
 Shipping.addEventListener('click', function(){
-	closePartOfMenu()
 	menuSolutions2.classList.toggle('menu_vision_shiping');
 });
 
 Ground.addEventListener('click', function(){
-	closePartOfMenu()
 	menuSolutions2_1.classList.toggle('menu_vision_ground');
 });
 
 air.addEventListener('click', function(){
-	closePartOfMenu()
 	menuSolutions2_3.classList.toggle('menu_vision_air');
 });
 
