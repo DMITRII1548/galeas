@@ -108,19 +108,23 @@ menuBtn.addEventListener('click', function(){
 });
 
 menuSolutions.addEventListener('click', function(){
+	closePartOfMenu()
 	menuSolutions1.classList.toggle('menu_vision2');
 });
 
 
 Shipping.addEventListener('click', function(){
+	closePartOfMenu()
 	menuSolutions2.classList.toggle('menu_vision_shiping');
 });
 
 Ground.addEventListener('click', function(){
+	closePartOfMenu()
 	menuSolutions2_1.classList.toggle('menu_vision_ground');
 });
 
 air.addEventListener('click', function(){
+	closePartOfMenu()
 	menuSolutions2_3.classList.toggle('menu_vision_air');
 });
 
@@ -128,14 +132,17 @@ air.addEventListener('click', function(){
 
 
 menuService.addEventListener('click', function(){
+	closePartOfMenu()
 	menuService1.classList.toggle('menu_vision3');
 });
 
 menuIndustry.addEventListener('click', function(){
+	closePartOfMenu()
 	menuIndustry1.classList.toggle('menu_vision4');
 });
 
 menuOptions.addEventListener('click', function(){
+	closePartOfMenu()
 	menuOptions1.classList.toggle('menu_vision5');
 });
 
@@ -152,3 +159,28 @@ function closeSolution() {
 	document.querySelector('.menu-solutions2-1').classList.add('menu_vision_shiping');
 	document.querySelector('.menu-solutions2-3').classList.add('menu_vision_air');
 }
+
+function closePartOfMenu() {
+	if (!menuSolutions1.classList.toggle('menu_vision2')) {
+		menuSolutions1.classList.toggle('menu_vision2')
+	}
+	if (!menuSolutions2.classList.toggle('menu_vision_shiping')) {
+		menuSolutions2.classList.toggle('menu_vision_shiping')
+	}
+	if (!menuSolutions2_1.classList.toggle('menu_vision_ground')) {
+		menuSolutions2_1.classList.toggle('menu_vision_ground')
+	}
+	if (!menuSolutions2_3.classList.toggle('menu_vision_air')) {
+		menuSolutions2_3.classList.toggle('menu_vision_air')
+	}
+	if (!menuService1.classList.toggle('menu_vision3')) {
+		menuService1.classList.toggle('menu_vision3')
+	}
+	if (!menuIndustry1.classList.toggle('menu_vision4')) {
+		menuIndustry1.classList.toggle('menu_vision4')
+	}
+	if (!menuOptions1.classList.toggle('menu_vision5')) {
+		menuOptions1.classList.toggle('menu_vision5')
+	}	
+}
+

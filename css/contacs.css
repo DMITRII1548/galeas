@@ -180,11 +180,6 @@ p{
     padding: 120px 0;
 }
 
-.container {
-    margin: 100px 0;
-}
-
-
 .more_wrapper_card{
     width: 460px;
     height: 409px;
@@ -526,7 +521,7 @@ p{
     background: url(../imgs/bg_vrode_norm.png);
     width: 100%;
     height: 414px;
-    margin: 196px 0;
+    margin: 80px 0;
 }
 
 

@@ -18,43 +18,35 @@
     const txt8 = document.getElementById('question-txt-8')
 
     openCloseBtn1.onclick = () => {
-        openCloseBtn1.classList.toggle('question__arrow--opened')
         txt1.classList.toggle('none')
     }
 
     openCloseBtn2.onclick = () => {
-        openCloseBtn2.classList.toggle('question__arrow--opened')
         txt2.classList.toggle('none')
     }
 
     openCloseBtn3.onclick = () => {
-        openCloseBtn3.classList.toggle('question__arrow--opened')
         txt3.classList.toggle('none')
     }
 
 
     openCloseBtn4.onclick = () => {
-        openCloseBtn4.classList.toggle('question__arrow--opened')
         txt4.classList.toggle('none')
     }
 
     openCloseBtn5.onclick = () => {
-        openCloseBtn5.classList.toggle('question__arrow--opened')
         txt5.classList.toggle('none')
     }
 
     openCloseBtn6.onclick = () => {
-        openCloseBtn6.classList.toggle('question__arrow--opened')
         txt6.classList.toggle('none')
     }
 
     openCloseBtn7.onclick = () => {
-        openCloseBtn7.classList.toggle('question__arrow--opened')
         txt7.classList.toggle('none')
     }
 
     openCloseBtn8.onclick = () => {
-        openCloseBtn8.classList.toggle('question__arrow--opened')
         txt8.classList.toggle('none')
     }
 }

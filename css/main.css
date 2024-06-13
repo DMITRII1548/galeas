@@ -270,9 +270,15 @@ h1{
   margin: 20px 373px 20px 0px;
 }
 
-@media screen and (min-width: 999px) {
+@media screen and (min-width: 1000px) {
   .solution__and__services {
-    padding-top: 80px;
+    padding-top: 120px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .solution__and__services {
+    padding-top: 40px !important;
   }
 }
 
@@ -1630,6 +1636,10 @@ p{
   display: flex;
   align-items: center;
   gap: 34px;
+}
+
+.header__container button {
+  text-align: left;
 }
 
 .header__wrapper {
