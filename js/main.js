@@ -114,14 +114,17 @@ menuSolutions.addEventListener('click', function(){
 
 
 Shipping.addEventListener('click', function(){
+	closeSolution()
 	menuSolutions2.classList.toggle('menu_vision_shiping');
 });
 
 Ground.addEventListener('click', function(){
+	closeSolution()
 	menuSolutions2_1.classList.toggle('menu_vision_ground');
 });
 
 air.addEventListener('click', function(){
+	closeSolution()
 	menuSolutions2_3.classList.toggle('menu_vision_air');
 });
 
@@ -153,7 +156,7 @@ document.querySelector('.menu-industry').onclick = () => {
 
 function closeSolution() {
 	document.querySelector('.menu-solutions2').classList.add('menu_vision_shiping');
-	document.querySelector('.menu-solutions2-1').classList.add('menu_vision_shiping');
+	document.querySelector('.menu-solutions2-1').classList.add('menu_vision_ground');
 	document.querySelector('.menu-solutions2-3').classList.add('menu_vision_air');
 }
 
