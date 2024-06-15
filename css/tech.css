@@ -45,6 +45,7 @@
     font-weight: 600;
     line-height: 29.26px;
 
+    cursor: pointer;
     color: #303030;
 }
 
@@ -54,6 +55,7 @@
 
 .tech__btn {
     width: 48px;
+    cursor: pointer;
 }
 
 .tech__content {
