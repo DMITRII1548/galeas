@@ -69,6 +69,20 @@
   	z-index: 10;
 }
 
+@media screen and (max-width: 1415px) {
+	.menu-solutions1 , .menu-service1 , .menu-industry1, .menu-options1, .menu-solutions2, .menu-solutions2-1, .menu-solutions2-3, .menu-solutions1, .menu-service1, .menu-industry1, .menu-options1 {
+		width: 380px !important;
+	}
+
+	.menu-solutions2, .menu-solutions2-1, .menu-solutions2-3,.menu-solutions1 , .menu-service1 , .menu-industry1, .menu-options1 {
+		left: 750px;
+	}
+
+	.menu-solutions1 , .menu-service1 , .menu-industry1, .menu-options1 {
+		left: 370px !important;
+	}
+}
+
 .hide_mobile_menu
 {
 	display: none;

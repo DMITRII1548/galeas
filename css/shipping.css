@@ -144,6 +144,8 @@ p{
 
 .card_solution{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
 }
@@ -265,9 +267,6 @@ p{
         margin: 40px 0 0 28px;
     }
 
-    .header__logo{
-        margin-left: 81px;
-    }
 
     .wrapper_card_solution {
         background-color: rgba(48, 48, 48, 0.6);
