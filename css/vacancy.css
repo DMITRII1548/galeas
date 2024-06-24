@@ -79,3 +79,10 @@
         line-height: 17.07px;
     }
 }
+
+@media screen and (width: 2560px) {
+    .container.vacancy {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

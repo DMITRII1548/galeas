@@ -68,3 +68,10 @@
         line-height: 29.26px;
     }
 }
+
+@media screen and (width: 2560px) {
+    .container.details {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

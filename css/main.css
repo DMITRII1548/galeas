@@ -2074,7 +2074,9 @@ p{
   }
 }
 
-@media screen and (min-width: 2559px) {
+
+
+@media screen and (width: 2560px) {
   .header__background {
     padding-top: 290px;
     width: 100%;
@@ -2098,23 +2100,35 @@ p{
     margin-left: auto;
     margin-right: auto;
   }
+
+  .solutions.container {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .solutions.container > h2, .solutions.container > div {
+    width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (width: 1680px) {
   .header__background {
     height: 950px;
     padding-top: 150px;
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (width: 1600px) {
   .header__background {
     padding-top: 40px;
     height: 800px;
   }
 }
 
-@media screen and (max-width: 1536px) {
+@media screen and (width: 1536px) {
   .header__background {
     padding-top: 40px;
     height: 760px;
@@ -2125,14 +2139,14 @@ p{
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (width: 1440px) {
   .header__background {
     height: 800px;
     padding-top: 60px;
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (width: 1366px) {
   .info__text {
     font-size: 60px;
   }
@@ -2147,10 +2161,10 @@ p{
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (width: 1280px) {
   .header__background {
-    height: 950px;
-    padding-top: 100px;
+    height: 620px;
+    padding-top: 10px;
   }
 
   .info__card__flex {
@@ -2160,17 +2174,25 @@ p{
 
   .header__card {
     height: 340px;
+    margin-top: 10px;
   }
 
   .more > .text {
-    padding-top: 25px;
+    padding-top: 10px;
   }
 
   .info__text {
-    font-size: 96px;
+    font-size: 72px;
+  }
+}
+
+@media (min-height: 1030px) and (width: 1280px) {
+  .header__background {
+    height: 950px;
+    padding-top: 190px;
   }
 
   .more > .text {
-    padding-top: 130px;
+    padding-top: 150px;
   }
 }
