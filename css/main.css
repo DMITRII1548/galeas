@@ -2077,12 +2077,16 @@ p{
 
 
 @media screen and (width: 2560px) {
+  .banner__info {
+    padding-left: 1400px;
+  }
+
   .header__background {
     padding-top: 290px;
     width: 100%;
     background-size: cover;
     height: 1350px;
-    padding-left: 400px;
+    padding-left: 180px;
   }
 
   .more > .text {
@@ -2119,6 +2123,10 @@ p{
     height: 950px;
     padding-top: 150px;
   }
+
+  .card {
+    width: 335px;
+  }
 }
 
 @media screen and (width: 1600px) {
@@ -2129,6 +2137,10 @@ p{
 }
 
 @media screen and (width: 1536px) {
+  .solution__and__services {
+    padding-top: 120px;
+  }
+
   .header__background {
     padding-top: 40px;
     height: 760px;
@@ -2137,6 +2149,12 @@ p{
   .info__text {
     font-size: 72px;
   }
+
+  .header__card {
+    scale: 0.8;
+    margin-left: 140px;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (width: 1440px) {
@@ -2144,24 +2162,45 @@ p{
     height: 800px;
     padding-top: 60px;
   }
+
+  .solution__and__services {
+    padding-top: 120px !important;
+  }
+
+  .banner__info {
+    padding-left: 800px !important;
+  }
 }
 
 @media screen and (width: 1366px) {
+  .solution__and__services {
+    padding-top: 120px;
+  }
+
   .info__text {
     font-size: 60px;
   }
 
   .header__card {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .header__background {
     padding-top: 10px;
     height: 670px;
   }
+
+  .header__card {
+    scale: 0.8;
+    margin-left: 130px;
+  }
 }
 
 @media screen and (width: 1280px) {
+  .solution__and__services {
+    padding-top: 120px;
+  }
+
   .header__background {
     height: 620px;
     padding-top: 10px;
@@ -2183,6 +2222,19 @@ p{
 
   .info__text {
     font-size: 72px;
+  }
+
+  .info__map {
+    padding-top: 5px;
+  }
+
+  .info__map li {
+    margin-top: 15px;
+  }
+
+  .header__card {
+    scale: 0.8;
+    margin-left: 130px;
   }
 }
 

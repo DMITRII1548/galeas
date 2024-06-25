@@ -149,3 +149,21 @@
         margin-right: auto;
     }
 }
+
+@media screen and (width: 1280px) {
+    .swiper-wrapper {
+        gap: 65px;
+    }
+}
+
+@media screen and (width: 1366px) {
+    .swiper-wrapper {
+        gap: 80px;
+    }
+}
+
+@media screen and (width: 1536px) {
+    .swiper-wrapper {
+        gap: 10px;
+    }
+}
