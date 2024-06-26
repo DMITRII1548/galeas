@@ -152,18 +152,30 @@
 
 @media screen and (width: 1280px) {
     .swiper-wrapper {
-        gap: 65px;
+        gap: 65px !important;
     }
 }
 
 @media screen and (width: 1366px) {
     .swiper-wrapper {
-        gap: 80px;
+        gap: 90px;
+    }
+}
+
+@media screen and (width: 1440px) {
+    .swiper-wrapper {
+        gap: 130px;
     }
 }
 
 @media screen and (width: 1536px) {
     .swiper-wrapper {
-        gap: 10px;
+        gap: 5px !important;
+    }
+}
+
+@media screen and (width: 1600px) {
+    .swiper-wrapper {
+        gap: 25px !important;
     }
 }
