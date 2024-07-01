@@ -2077,6 +2077,10 @@ p{
 
 
 @media screen and (width: 2560px) {
+  .banner {
+    background-size: cover;
+  }
+  
   .banner__info {
     padding-left: 1400px;
   }
@@ -2116,6 +2120,24 @@ p{
     margin-left: auto;
     margin-right: auto;
   }
+
+  .header__card {
+    margin-left: 20px !important;
+  }
+
+  .info__text {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (width: 1920px) {
+  .header__card {
+    margin-left: 200px !important;
+  }
+
+  .info__text {
+    margin-left: 200px !important;
+  }
 }
 
 @media screen and (width: 1680px) {
@@ -2127,12 +2149,28 @@ p{
   .card {
     width: 335px;
   }
+
+  .header__card {
+    margin-left: 200px !important;
+  }
+
+  .info__text {
+    margin-left: 200px !important;
+  }
 }
 
 @media screen and (width: 1600px) {
   .header__background {
     padding-top: 40px;
     height: 800px;
+  }
+
+  .header__card {
+    margin-left: 200px !important;
+  }
+
+  .info__text {
+    margin-left: 200px !important;
   }
 }
 
@@ -2171,6 +2209,14 @@ p{
   .banner__info {
     padding-left: 800px !important;
   }
+
+  .header__card {
+    margin-left: 190px !important;
+  }
+
+  .info__text {
+    margin-left: 190px !important;
+  }
 }
 
 @media screen and (width: 1366px) {
@@ -2194,7 +2240,7 @@ p{
 
   .header__card {
     scale: 0.8;
-    margin-left: 130px;
+    margin-left: 135px;
   }
 }
 
@@ -2224,7 +2270,6 @@ p{
 
   .info__text {
     font-size: 72px;
-    margin-left: 200px;
   }
 
   .info__map {
@@ -2237,7 +2282,14 @@ p{
 
   .header__card {
     scale: 0.8;
-    margin-left: 130px;
+  }
+
+  .header__card {
+    margin-left: 65px !important;
+  }
+
+  .info__text {
+    margin-left: 135px !important;
   }
 }
 
@@ -2249,5 +2301,11 @@ p{
 
   .more > .text {
     padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .banner__info {
+    padding: 0 !important;
   }
 }
