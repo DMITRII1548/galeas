@@ -76,10 +76,38 @@ infoInfo.addEventListener('click', function(){
 
 
 
+document.getElementById('closeMenuByBg').onclick = function () {
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+	document.getElementById('closeMenuByBg').classList.toggle('none');
 
+	if (!menuSolutions2.classList.toggle('menu_vision_shiping')) {
+		menuSolutions2.classList.toggle('menu_vision_shiping');
+	}
+	if (!menuSolutions2_1.classList.toggle('menu_vision_ground')) {
+		menuSolutions2_1.classList.toggle('menu_vision_ground');
+	}
+	if (!menuSolutions2_3.classList.toggle('menu_vision_air')) {
+		menuSolutions2_3.classList.toggle('menu_vision_air');
+	}
+
+	if (!menuSolutions1.classList.toggle('menu_vision2')) {
+		menuSolutions1.classList.toggle('menu_vision2');
+	}
+	if (!menuService1.classList.toggle('menu_vision3')) {
+		menuService1.classList.toggle('menu_vision3');
+	}
+	if (!menuIndustry1.classList.toggle('menu_vision4')) {
+		menuIndustry1.classList.toggle('menu_vision4');
+	}
+	if (!menuOptions1.classList.toggle('menu_vision5')) {
+		menuOptions1.classList.toggle('menu_vision5');
+	}
+}
 
 
 menuBtn.addEventListener('click', function(){
+	document.getElementById('closeMenuByBg').classList.toggle('none');
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
 
